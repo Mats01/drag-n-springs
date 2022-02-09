@@ -6,10 +6,11 @@ import {
   NavLink
 } from "react-router-dom";
 import '../App.css';
-import Screen from '../comonents/screen/Screen';
 import Home from '../comonents/home/Home';
 import Route404 from '../comonents/Route404';
 import { styles } from '../Style';
+import Drag from '../comonents/DragTests';
+import Springs from '../comonents/AnimationTests';
 
 
 
@@ -27,14 +28,18 @@ export default function AppRouter() {
               to="/">Home</NavLink>
             <NavLink
               style={({ isActive }) => (!isActive ? styles.navLink : { ...styles.navLink, ...styles.activeNavLink })}
-              to="/screen">Screen</NavLink>
+              to="/drag">Drag</NavLink>
+            <NavLink
+              style={({ isActive }) => (!isActive ? styles.navLink : { ...styles.navLink, ...styles.activeNavLink })}
+              to="/springs">Springs</NavLink>
           </div>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Routes>
-          <Route path="/screen" element={<Screen />} />
+          <Route path="/drag" element={<Drag />} />
+          <Route path="/springs" element={<Springs />} />
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Route404 />} />
         </Routes>
