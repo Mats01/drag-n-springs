@@ -1,7 +1,7 @@
 import React, { FC } from 'react'
 
 
-const Route404: FC<{}> = ({ }) => {
+const Route404: FC<{}> = () => {
 
   return (
     <div className="App">

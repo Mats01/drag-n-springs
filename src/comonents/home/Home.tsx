@@ -3,7 +3,7 @@ import { ActionTypes } from '../../context/actionTypes';
 import { AppContext } from '../../context/AppContext';
 
 
-const Home: FC<{}> = ({ }) => {
+const Home: FC<{}> = () => {
 
   const { rootState, globalDispatch } = useContext(AppContext);
   const { count } = rootState.counterState;
