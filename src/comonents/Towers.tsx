@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { animated, useSpring, useSprings } from "react-spring";
+import React, { useState } from "react";
+import { animated, useSprings } from "react-spring";
 import { useDrag } from 'react-use-gesture'
-
-const config = { mass: 5, tension: 2000, friction: 200, duration: 500, };
 
 
 
@@ -10,9 +8,7 @@ const config = { mass: 5, tension: 2000, friction: 200, duration: 500, };
 function Towers() {
 
   const colors = ["#f00", "#0f0", "#00f"];
-  const [{ x, y }, set] = useSpring(() => ({ x: 100, y: 400 }))
   const [target, setTarget] = useState({ x: 100, y: 400 })
-  const [oldTarget, setOldTarget] = useState({ x: 100, y: 400 })
 
   const [items, setItems] = useState(new Array(3).fill(0).map((_, i) => ({ size: i + 1, x: 30, y: i * 10 })));
   const [towers, setTowers] = useState<{ [key: number]: number[] }>({
@@ -21,7 +17,7 @@ function Towers() {
     2: []
   });
 
-  const [springs, setSprings] = useSprings(3, i => ({ x, y }))
+  const [springs, setSprings] = useSprings(3, i => ({ x: 30, y: window.innerHeight - 200 }))
 
   // Set the drag hook and define component movement based on gesture data
 
