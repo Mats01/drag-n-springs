@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useTrail, animated, useSpring } from "react-spring";
+import React, { useState } from "react";
+import { animated, useSpring } from "react-spring";
 import { useDrag } from 'react-use-gesture'
 
-const config = { mass: 5, tension: 2000, friction: 200, duration: 500, };
+
 
 function Drag() {
   const [{ x, y }, set] = useSpring(() => ({ x: 100, y: 400 }))

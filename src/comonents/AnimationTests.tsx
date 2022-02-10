@@ -4,7 +4,7 @@ import { useTrail, animated as a } from "react-spring";
 const config = { mass: 5, tension: 2000, friction: 200, duration: 500, };
 
 function Springs() {
-  const [items, setItems] = useState(["Nesto niste dobro upisali"]);
+  const [items,] = useState(["Nesto niste dobro upisali"]);
 
   const [toggle, setToggle] = useState(true);
   const trail = useTrail(items.length, {

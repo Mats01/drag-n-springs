@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   NavLink
@@ -18,7 +18,7 @@ import Towers from '../comonents/Towers';
 export default function AppRouter() {
 
   return (
-    <Router>
+    <Router >
       <div>
         <nav>
           <div
