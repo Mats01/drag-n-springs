@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/drag-n-springs/static/css/main.073c9b0a.css",
-    "main.js": "/drag-n-springs/static/js/main.8a73e2b1.js",
+    "main.js": "/drag-n-springs/static/js/main.9e938be5.js",
     "static/js/787.c74f8907.chunk.js": "/drag-n-springs/static/js/787.c74f8907.chunk.js",
     "index.html": "/drag-n-springs/index.html",
     "main.073c9b0a.css.map": "/drag-n-springs/static/css/main.073c9b0a.css.map",
-    "main.8a73e2b1.js.map": "/drag-n-springs/static/js/main.8a73e2b1.js.map",
+    "main.9e938be5.js.map": "/drag-n-springs/static/js/main.9e938be5.js.map",
     "787.c74f8907.chunk.js.map": "/drag-n-springs/static/js/787.c74f8907.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.8a73e2b1.js"
+    "static/js/main.9e938be5.js"
   ]
 }
