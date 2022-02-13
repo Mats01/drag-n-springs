@@ -12,6 +12,7 @@ import { styles } from '../Style';
 import Drag from '../comonents/DragTests';
 import Springs from '../comonents/AnimationTests';
 import Towers from '../comonents/Towers';
+import Flip from '../comonents/Flip';
 
 
 
@@ -36,6 +37,9 @@ export default function AppRouter() {
             <NavLink
               style={({ isActive }) => (!isActive ? styles.navLink : { ...styles.navLink, ...styles.activeNavLink })}
               to="/towers">towers</NavLink>
+            <NavLink
+              style={({ isActive }) => (!isActive ? styles.navLink : { ...styles.navLink, ...styles.activeNavLink })}
+              to="/flip">flip</NavLink>
           </div>
         </nav>
 
@@ -45,6 +49,7 @@ export default function AppRouter() {
           <Route path="/drag" element={<Drag />} />
           <Route path="/springs" element={<Springs />} />
           <Route path="/towers" element={<Towers />} />
+          <Route path="/flip" element={<Flip />} />
 
           <Route path="/" element={<Home />} />
           <Route path="*" element={<Route404 />} />
